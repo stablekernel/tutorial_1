@@ -1,0 +1,14 @@
+<h1>Budget Planner</h1>
+<div class="container">
+    <label>Total Budget</label><label class="budget">{{viewModel.budget}}</label>
+</div>
+<div *ngIf="viewModel.isNoExpensesVisible" class="no-expenses">
+    No expenses yet...
+</div>
+<div expenseHover class="expense-container" *ngFor="let expense of viewModel.expenses">
+    <expense [expense]="expense"></expense>
+</div>
+<div class="container">
+    <label>Balance</label><label class="balance" [class.green]="viewModel.isBalancePositive" [class.red]="!viewModel.isBalancePositive">{{viewModel.balance}}</label>
+</div>
+<new-expense (onExpenseCreated)="onExpenseCreated($event)"></new-expense>

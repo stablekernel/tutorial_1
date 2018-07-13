@@ -1,0 +1,8 @@
+<div class="new-expense">
+    <div class="new-expense-inputs">
+        <input type="text" [(ngModel)]="viewModel.description" placeholder="Expense Description"><input type="number" [(ngModel)]="viewModel.amount">
+    </div>
+    <div class="submit">
+        <input loseFocus type="button" (click)="onAddExpenseClicked(viewModel.amount, viewModel.description)" value="Add Expense">
+    </div>
+</div>

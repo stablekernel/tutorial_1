@@ -1,0 +1,46 @@
+:host {
+    /* This is equivalent of the 'body' selector of a page. */
+}
+
+.container {
+    min-width: 300px;
+    margin: 10px 0 10px 0;
+}
+
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.expense-container {
+    min-width: 300px;
+    padding: 1px 0 1px 4px;
+}
+
+.expense-container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.budget {
+    float: right;
+}
+
+.balance {
+    float: right;
+}
+
+.no-expenses {
+    color: #d1d1d1;
+    font-style: italic;
+}
+
+.green {
+    color: #85bb65;
+}
+
+.red {
+    color: #990a00;
+}

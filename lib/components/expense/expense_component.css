@@ -1,0 +1,14 @@
+.expense-container {
+    padding: 0;
+}
+
+.description {
+    display: block;
+    font-size: 11px;
+}
+
+.amount {
+    font-size: 14px;
+    display: block;
+    float: right;
+}
